@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import logo from './logo.svg';
+// import './App.css';
+// import { Route, Routes } from 'react-router-dom';
+// import NavBar from './components/Navbar'
+// // import reportWebVitals from './reportWebVitals';
+// import Footer from './components/Footer';
+// import HeroComponent from './components/HeroComponent';
+// import Categories from './components/Categories';
+// import DealOftheDay from './components/DealOftheDay';
+// import AboutUs from './components/AboutUs';
+import { BrowserRouter } from 'react-router-dom';
+import './global.css';
+import Router from './Router/Router';
+
+// import AllProductsPage from './components/AllProductsPage';
+// import AllProductsPage from './components/AllProductsPage';
+// import ProductCard from './components/ProductCard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    
+    <BrowserRouter>
+    <Router/>
+    </BrowserRouter>
+   
+     
+    
+  //   {/* <div style={{ maxHeight: "100vh", overflowY: "auto" }}>
+  //   <NavBar />
+  //   <HeroComponent />
+  //   <DealOftheDay />
+  //   <Categories />
+  //   <AboutUs />
+  //   <Footer />
+  // </div>; */}
+    
   );
 }
 
 export default App;
+
+
+// {/* <Router>
+//       <Switch>
+//         <Route path="/" exact component={ProductCard} />
+//         <Route path="/allproducts" component={AllProductsPage} /> {/* Define the route for the other component */}
+//         </Switch>
+//       </Router> */}
+
+
+//  {/* <Routes>
+//         {/* <Route path="/" element={< />} /> */}
+//         {/* <Route path="/allproducts" element={<AllProductsPage />} /> */}
+//       </Routes> */}
