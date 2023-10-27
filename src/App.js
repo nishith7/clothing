@@ -9,7 +9,7 @@
 // import Categories from './components/Categories';
 // import DealOftheDay from './components/DealOftheDay';
 // import AboutUs from './components/AboutUs';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './global.css';
 import Router from './Router/Router';
 
@@ -21,9 +21,9 @@ function App() {
   return (
    
     
-    <BrowserRouter>
+    <HashRouter>
     <Router/>
-    </BrowserRouter>
+    </HashRouter>
    
      
     
